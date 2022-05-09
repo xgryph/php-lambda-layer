@@ -1,4 +1,7 @@
+
 # PHP Layer For AWS Lambda
+
+> Forked to fix issues building the layer
 
 Ever wanted to run PHP websites in AWS Lambda? It's your lucky day! This Lambda Runtime Layer runs the [PHP 7.3/7.1  webserver](http://php.net/manual/en/features.commandline.webserver.php) in response to [AWS API Gateway](https://aws.amazon.com/api-gateway/) or [AWS Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/features/#Details_for_Elastic_Load_Balancing_Products) requests.
 
@@ -196,8 +199,8 @@ If you are behind a proxy server, just set the environment variable `http_proxy`
 invoking `make`, eg.:
 
 ```sh
-	$ export http_proxy=http://myproxy.acme.com:8080
-	$ make php73.zip
+  $ export http_proxy=http://myproxy.acme.com:8080
+  $ make php73.zip
 ```
 
 #### Debugging Layer Builds
@@ -205,13 +208,13 @@ invoking `make`, eg.:
 Run:
 
 ```sh
-	$ docker run --rm -it -v `pwd`:/opt/layer lambci/lambda:build-nodejs8.10 /bin/bash
+  $ docker run --rm -it -v `pwd`:/opt/layer lambci/lambda:build-nodejs8.10 /bin/bash
 ```
 
 If you are on Windows, run this instead:
 
 ```sh
-	> docker run --rm -it -v %cd%:/opt/layer lambci/lambda:build-nodejs8.10 /bin/bash
+  > docker run --rm -it -v %cd%:/opt/layer lambci/lambda:build-nodejs8.10 /bin/bash
 ```
 
 then manually execute the commands in the build.sh file.
