@@ -10,6 +10,9 @@ And, if you're looking for a great way to build serverless apps of all kinds, be
 This is an early iteration of the PHP runtime Layer which is not yet ready for production. Please feel free to use this Layer to learn about the Lambda Layers feature and begin experimenting with PHP functions. We welcome feedback and stay tuned for the production-ready version coming soon.
 
 ## Current Layer Version ARN
+
+> The Stackery layers are no longer available. You must now build the layer yourself and adding the layer to your own AWS account.
+
 When creating/updating a Lambda function you must specify  a specific version of the layer. This readme will be kept up to date with the latest version available. The latest available Lambda Layer Version ARNs for PHP 7.3 and 7.1 are:
 
 **arn:aws:lambda:\<region\>:887080169480:layer:php73:3**
